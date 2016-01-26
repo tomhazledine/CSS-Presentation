@@ -1,0 +1,45 @@
+body{
+    background:#ddd;
+    font-family:monospace;
+    color:#555;
+}
+.wrapper{
+    width:20em;
+    margin:10em auto;
+    h1{
+        font-size:1.5em;
+        padding-bottom:.5em;
+    }
+    a{
+        color:darken(#8cdb8b,30%);
+        text-decoration:none;
+    }
+    p{
+        padding-bottom:1em;
+    }
+}
+
+.card{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 170px;
+}
+
+.cardWrapper{
+    position: relative;
+    width: 100%;
+    background-color: #FFF;
+    display: table;
+    padding-bottom: 10px;
+    border: 1px solid #CCC;
+}
+
+.spinner-tile-details{
+    font-family:monospace;
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    color: #AAA;
+    text-align: center;
+}
