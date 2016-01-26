@@ -1,0 +1,36 @@
+// Typography etc.
+
+// bariol_regular
+@font-face {
+  font-family: 'bariol';
+  src:url('../fonts/bariol_regular/bariol_regular.eot');
+  src:url('../fonts/bariol_regular/bariol_regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/bariol_regular/bariol_regular.woff') format('woff'),
+      url('../fonts/bariol_regular/bariol_regular.ttf') format('truetype'),
+      url('../fonts/bariol_regular/bariol_regular.svg#bariol_regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// bariol_bold
+@font-face {
+  font-family: 'bariol';
+  src:url('../fonts/bariol_bold/bariol_bold.eot');
+  src:url('../fonts/bariol_bold/bariol_bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/bariol_bold/bariol_bold.woff') format('woff'),
+      url('../fonts/bariol_bold/bariol_bold.ttf') format('truetype'),
+      url('../fonts/bariol_bold/bariol_bold.svg#bariol_bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Fonts
+$display:sans-serif;
+$text:'bariol',georgia,serif;
+$utility:Helvetica,Arial,sans-serif;
+// $icons:'iconFont';
+$code:monospace;
+
+// Weights
+$book:400;
+$bold:700;

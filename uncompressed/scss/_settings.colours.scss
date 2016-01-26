@@ -1,0 +1,53 @@
+// COLOURS
+
+// "The New Defaults"
+$aqua:#7fdbff;
+$blue:#0074d9;
+$navy:#001f3f;
+$teal:#39cccc;
+$green:#2ecc40;
+$olive:#3d9970;
+$lime:#01ff70;
+$yellow:#ffdc00;
+$orange:#ff851b;
+$red:#ff4136;
+$fuchsia:#f012be;
+$purple:#b10dc9;
+$maroon:#85144b;
+$white:#fff;
+$silver:#ddd;
+$grey:#aaa;
+$black:#111;
+
+// Project Colours
+$black:#44484b;
+$mid:#9d9d9d;
+$white:#fefefe;
+$cream:#efeeeb;
+$grey:#dad8d2;
+$primary:#00b7c6;
+
+$greyHr:#dcdcdc;// Grey Line
+$blueHr:#e0e4e7;// Blue lines
+$bluePale:#e8f0f5;// Menu Background
+
+$blue: #eff8fe;// Overlay on $white
+$blueLight:#5ebaee;// Overlay on $blueMid
+
+$blueLinePale:#b5e4ff;// Line-art line colour
+$blueLineBright:#00bff3;// Line-art line colour
+$blueLine:#3ba9e8;// Line-art line colour
+
+$blueBright:#4fbee9;
+$blueMid:#3baaea;
+$blueDark:#3c7fc0;
+
+// Selection Colours
+::selection{
+  color:$white;
+  background:rgba($fuchsia,.5);
+}
+a::selection{
+  color:$white;
+  background:$fuchsia;
+}
