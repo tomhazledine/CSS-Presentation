@@ -1,7 +1,93 @@
 .crt_screen{
-    border:1em solid red;
-    background:$black;
+    // margin:10em auto;
+    // border:1em solid #222;
+    background:#222;//$black;
     width:10em;
-    height:8em;
+    // height:8em;
+    padding:1em;
     position:relative;
+    overflow:hidden;
+    border-radius:.5em;
+    box-shadow:inset rgba(black,.4) -.5em .5em .5em 0;
+    // border:2em solid $cream;
+    &:before{
+        content:'';
+        display:block;
+        position:absolute;
+        z-index:2;
+        width:50%;
+        height:200%;
+        top:-50%;
+        left:50%;
+        background:linear-gradient(to right,rgba($white,.2),transparent);
+        transform:rotate(10deg);
+    }
+}
+
+$crt:#fefefe;
+
+.crt_body{
+    width:14em;
+    height:11em;
+    padding:1em 2em;
+    background:$crt;
+    border:.2em solid darken($crt,5%);
+    border-top-color:lighten($crt,5%);
+    border-right-color:lighten($crt,5%);
+    border-radius:.2em;
+    position:relative;
+    &:before{
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:-1em;
+        left:50%;
+        width:8em;
+        height:1em;
+        background:$crt;
+        margin-left:-4em;
+        border:.2em solid darken($crt,5%);
+        border-top:none;
+        border-right-color:lighten($crt,5%);
+        border-radius:0 0 .3em .3em;
+    }
+    &:after{
+        content:"";
+        display:block;
+        position:absolute;
+        bottom:-.25em;
+        left:50%;
+        margin-left:-.25em;
+        width:.5em;
+        height:.5em;
+        background:$black;
+        border-radius:50%;
+        box-shadow:
+            $black 1em 0 0 0,
+            $black 2em 0 0 0,
+            $black 3em 0 0 0,
+            $black -1em 0 0 0,
+            $black -2em 0 0 0,
+            $black -3em 0 0 0,
+            darken($crt,5%) 0em -.2em 0 0,
+            darken($crt,5%) 1em -.2em 0 0,
+            darken($crt,5%) 2em -.2em 0 0,
+            darken($crt,5%) 3em -.2em 0 0,
+            darken($crt,5%) -1em -.2em 0 0,
+            darken($crt,5%) -2em -.2em 0 0,
+            darken($crt,5%) -3em -.2em 0 0,
+            lighten($crt,5%) 0em .2em 0 0,
+            lighten($crt,5%) 1em .2em 0 0,
+            lighten($crt,5%) 2em .2em 0 0,
+            lighten($crt,5%) 3em .2em 0 0,
+            lighten($crt,5%) -1em .2em 0 0,
+            lighten($crt,5%) -2em .2em 0 0,
+            lighten($crt,5%) -3em .2em 0 0
+        ;
+    }
+}
+
+.crt_front{
+    // font-size:2em;
+    // perspective:600px;
 }
